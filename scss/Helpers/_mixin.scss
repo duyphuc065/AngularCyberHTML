@@ -1,0 +1,35 @@
+@mixin text($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin button ($color, $bg-color, $border-color, $color-hover, $bg-hover, $border-hover) {
+    color: $color;
+    background-color: $bg-color;
+    border: 1px solid $border-color;
+
+    &:hover {
+        color: $color-hover;
+        background-color: $bg-hover;
+        border-color: $border-hover;
+    }
+}
+
+@font-face {
+    font-family: "SF Display";
+    font-weight: 400;
+    src: url("./font/SF-UI-Display-Regular.otf");
+}
+
+@font-face {
+    font-family: "SF Display";
+    font-weight: 500;
+    src: url("./font/SF-UI-Display-Medium.otf");
+}
+
+@font-face {
+    font-family: "SF Text";
+    font-weight: 400;
+    src: url("./font/SF-UI-Text-Regular.otf");
+}

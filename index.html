@@ -1,0 +1,1547 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/lity.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <!-- menu desktop -->
+        <nav class="fixed-top menu-des d-none d-lg-block">
+            <div class="container-fluid">
+                <div class="row">
+                    <a href="" class="col logo"><img src="./img/icon/web-logo.png" alt="logo"></a>
+                    <ul class="col m-0 row justifi-content-beetwen category">
+                        <li><a href="">Lịch chiếu</a></li>
+                        <li><a href="">Cụm rạp</a></li>
+                        <li><a href="">Tin tức</a></li>
+                        <li><a href="">Ứng dụng</a></li>
+                    </ul>
+                    <div class="col row justify-content-end right m-0">
+                        <div class="login">
+                            <a href=""><img src="./img/avatar.png" alt="avatar" class="imgLogin">
+                                Đăng nhập
+                            </a>
+                        </div>
+                        <div class="line "></div>
+                        <div class="dropdown">
+                            <img src="./img/icon/location-header.png" class="pr-3" alt="location-header">
+                            <div class="header__location dropdownList dropdown-toggle" id="dropdownMenu1"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Hồ Chí Minh
+                                <span class="caret pl-2"><img src="./img/icon/dropdown-icon.png" alt=""></span>
+                            </div>
+                            <ul class="dropdown-menu " aria-labelledby="dropdownMenu1">
+                                <li><a class="dropdown-item" href="#" data-value="Hồ Chí Minh">Hồ Chí Minh</a></li>
+                                <li><a class="dropdown-item" href="#" data-value="Hà Nội">Hà Nội </a></li>
+                                <li><a class="dropdown-item" href="#" data-value="Đà Nẵng">Đà Nẵng</a></li>
+                                <li><a class="dropdown-item" href="#" data-value="Hải Phòng">Hải Phòng</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- menu mobile -->
+        <nav class="fixed-top menu-mob d-block d-lg-none">
+            <div class="container-fluid">
+                <div class="row">
+                    <a href="" class="col logo">
+                        <img src="./img/icon/web-logo.png" alt="web-logo">
+                    </a>
+                    <div class="col row justify-content-end right ">
+                        <div class="menu-options">
+                            <a href="javascript:void(0)" id="open-menu" onclick="openMenu()">
+                                <img src="./img/icon/menu-options.png" alt="menu-options">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="mySidenav">
+            <div class="wrap-menu">
+                <ul class="login-mob row">
+                    <li class="col-auto wrap-login">
+                        <a href=""><img src="./img/avatar.png" alt="avatar" class="imgLoginMo">
+                            Đăng nhập
+                        </a>
+                    </li>
+                    <li class="col menu-close">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                            <img src="./img/icon/next-session.png" class="imgClose" alt="imgLogin">
+                        </a>
+                    </li>
+                    <li class="col-12 category-mob ">
+                        <a href="">Lịch chiếu</a>
+                        <a href="">Cụm rạp</a>
+                        <a href="">Tin tức</a>
+                        <a href="">Ứng dụng</a>
+                        <a href="">Hồ Chí Minh</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <!-- header end -->
+
+    <!-- banner start -->
+    <section class="banner">
+        <!--Carousel Wrapper-->
+        <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+                <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+            </ol>
+            <!--/.Indicators-->
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+                <!--First slide-->
+                <div class="carousel-item active">
+                    <a href="#">
+                        <img class="d-block w-100" src="https://s3img.vcdn.vn/123phim/2019/07/nhen-15622966541398.jpg"
+                            alt="First slide">
+                        <div class="carousel__background"></div>
+                        <a href="https://www.youtube.com/watch?v=DYYtuKyMtY8" data-lity>
+                            <div class="carousel__video text-center">
+                                <img src="./img/icon/play-video.png" alt="play-video">
+                            </div>
+                        </a>
+                    </a>
+                </div>
+                <!--/First slide-->
+                <!--Second slide-->
+                <div class="carousel-item">
+                    <a href="#">
+                        <img class="d-block w-100" src="https://s3img.vcdn.vn/123phim/2019/07/beo-15622967404800.jpg"
+                            alt="Second slide">
+                        <div class="carousel__background"></div>
+                        <a href="https://www.youtube.com/watch?v=3BX_x7OnSmg" data-lity>
+                            <div class="carousel__video text-center">
+                                <img src="./img/icon/play-video.png" alt="play-video">
+                            </div>
+                        </a>
+                    </a>
+                </div>
+                <!--/Second slide-->
+                <!--Third slide-->
+                <div class="carousel-item">
+                    <a href="#">
+                        <img class="d-block w-100" src="https://s3img.vcdn.vn/123phim/2019/06/para-15611033899645.jpg"
+                            alt="Third slide">
+                        <div class="carousel__background"></div>
+                        <a href="https://www.youtube.com/watch?v=o3ESQWArU2w" data-lity>
+                            <div class="carousel__video text-center">
+                                <img src="./img/icon/play-video.png" alt="play-video">
+                            </div>
+                        </a>
+                    </a>
+                </div>
+                <!--/Third slide-->
+            </div>
+            <!--/.Slides-->
+            <!--Controls-->
+            <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            <!--/.Controls-->
+        </div>
+        <!--/.Carousel Wrapper-->
+        <!-- select film -->
+        <div class="banner__tools d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="dropdown">
+                            <div class="dropdownList dropdown-toggle" id="dropdownTool1" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="true">
+                                Phim
+                                <span class="caret pl-2"><img src="./img/icon/dropdown-icon.png" alt=""></span>
+                            </div>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownTool1">
+                                <li><a class="dropdown-item" href="#"
+                                        data-value="Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From Home (C13)">Spider-Man:
+                                        Người Nhện Xa Nhà - Spider-Man: Far From Home (C13)</a></li>
+                                <li><a class="dropdown-item" href="#" data-value="Ký Sinh Trùng - Parasite (C18)">Ký
+                                        Sinh Trùng - Parasite (C18) </a></li>
+                                <li><a class="dropdown-item" href="#"
+                                        data-value="Tay Đua Huyền Thoại - Trading Paint (C16)">Tay Đua Huyền Thoại -
+                                        Trading Paint (C16)</a></li>
+                                <li><a class="dropdown-item" href="#"
+                                        data-value="Annabelle: Ác Quỷ Trở Về - Annabelle Comes Home (C18)">Annabelle: Ác
+                                        Quỷ Trở Về - Annabelle Comes Home (C18)</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-md-2">
+                        <div class="dropdown">
+                            <div class="dropdownList theater dropdown-toggle" id="dropdownTool2" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="true">
+                                Rạp
+                                <span class="caret pl-2"><img src="./img/icon/dropdown-icon.png" alt=""></span>
+                            </div>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownTool2">
+                                <li><a class="dropdown-item">Vui lòng chọn phim</a></li>
+                                <li><a class="dropdown-item" href="#" data-value="BHD Star Bitexco">BHD Star Bitexco</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#" data-value="BHD Star Vincom 3/2">BHD Star Vincom
+                                        3/2 </a></li>
+                                <li><a class="dropdown-item" href="#" data-value="CineStar Hai Bà Trưng">CineStar Hai Bà
+                                        Trưng</a></li>
+                                <li><a class="dropdown-item" href="#" data-value="Galaxy - Huỳnh Tấn Phát">Galaxy -
+                                        Huỳnh Tấn Phát</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-md-2">
+                        <div class="dropdown">
+                            <div class="dropdownList dropdown-toggle" id="dropdownTool3" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="true">
+                                Ngày xem
+                                <span class="caret pl-2"><img src="./img/icon/dropdown-icon.png" alt=""></span>
+                            </div>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownTool3">
+                                <li><a class="dropdown-item">Vui lòng chọn phim và rạp</a></li>
+                                <li><a class="dropdown-item" href="#" data-value="action">
+                                        <span class="date-book">Hôm nay</span>
+                                        <span class="time-book">2019-07-09</span>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#" data-value="another action">
+                                        <span class="date-book">Ngày mai</span>
+                                        <span class="time-book">2019-07-10</span>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#" data-value="something else here">
+                                        <span class="date-book">Thứ tư</span>
+                                        <span class="time-book">2019-07-11</span>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#" data-value="separated link">
+                                        <span class="date-book">Thứ năm</span>
+                                        <span class="time-book">2019-07-12</span>
+                                    </a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-md-2">
+                        <div class="dropdown">
+                            <div class="dropdownList dropdown-toggle" id="dropdownTool4" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="true">
+                                Suất chiếu
+                                <span class="caret pl-2"><img src="./img/icon/dropdown-icon.png" alt=""></span>
+                            </div>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownTool4">
+                                <li><a class="dropdown-item" href="#" data-value="18:00">18:00</a></li>
+                                <li><a class="dropdown-item" href="#" data-value="19:00">19:00 </a></li>
+                                <li><a class="dropdown-item" href="#" data-value="20:00">20:00</a></li>
+                                <li><a class="dropdown-item" href="#" data-value="21:00">21:00</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-book">Mua vé ngay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner end -->
+
+    <!-- Films start -->
+    <section class="films">
+        <div class="container">
+            <ul class="nav films__nav">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#home">Đang chiếu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#menu1">Sắp chiếu</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane container active" id="home">
+                    <div class="row sliders slick-film">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <a class="card-hover" href="#">
+                                    <div class="card-image">
+                                        <img class="card-img-top"
+                                            src="https://s3img.vcdn.vn/123phim/2019/07/spider-man-nguoi-nhen-xa-nha-spider-man-far-from-home-c13-15622963710691.jpg"
+                                            alt="Card image">
+                                        <div class="card-age">
+                                            C13
+                                        </div>
+                                        <div class="card-idmb">
+                                            <div class="card-point">8.9</div>
+                                            <div class="card-star">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.2.png" class="star-half" alt="star1.2">
+                                            </div>
+                                        </div>
+                                        <div class="card-background"></div>
+
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-info">
+                                            <h4 class="card-title">Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From
+                                                Home
+                                                (C13)
+                                            </h4>
+                                            <p class="card-text">129 phút - 8.1 IMDb</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="card-button">
+                                    <a href="" class="btn btn-card">MUA VÉ</a>
+                                </div>
+                                <div class="card-video">
+                                    <a href="https://www.youtube.com/watch?v=3BX_x7OnSmg" data-lity>
+                                        <div class="card-play text-center">
+                                            <img src="./img/icon/play-video.png" alt="play-video">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <a class="card-hover" href="#">
+                                    <div class="card-image">
+                                        <img class="card-img-top"
+                                            src="https://s3img.vcdn.vn/123phim/2019/07/spider-man-nguoi-nhen-xa-nha-spider-man-far-from-home-c13-15622963710691.jpg"
+                                            alt="Card image">
+                                        <div class="card-age">
+                                            C13
+                                        </div>
+                                        <div class="card-idmb">
+                                            <div class="card-point">8.9</div>
+                                            <div class="card-star">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.2.png" class="star-half" alt="star1.2">
+                                            </div>
+                                        </div>
+                                        <div class="card-background"></div>
+
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-info">
+                                            <h4 class="card-title">Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From
+                                                Home
+                                                (C13)
+                                            </h4>
+                                            <p class="card-text">129 phút - 8.1 IMDb</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="card-button">
+                                    <a href="" class="btn btn-card">MUA VÉ</a>
+                                </div>
+                                <div class="card-video">
+                                    <a href="https://www.youtube.com/watch?v=3BX_x7OnSmg" data-lity>
+                                        <div class="card-play text-center">
+                                            <img src="./img/icon/play-video.png" alt="play-video">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <a class="card-hover" href="#">
+                                    <div class="card-image">
+                                        <img class="card-img-top"
+                                            src="https://s3img.vcdn.vn/123phim/2019/07/spider-man-nguoi-nhen-xa-nha-spider-man-far-from-home-c13-15622963710691.jpg"
+                                            alt="Card image">
+                                        <div class="card-age">
+                                            C13
+                                        </div>
+                                        <div class="card-idmb">
+                                            <div class="card-point">8.9</div>
+                                            <div class="card-star">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.2.png" class="star-half" alt="star1.2">
+                                            </div>
+                                        </div>
+                                        <div class="card-background"></div>
+
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-info">
+                                            <h4 class="card-title">Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From
+                                                Home
+                                                (C13)
+                                            </h4>
+                                            <p class="card-text">129 phút - 8.1 IMDb</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="card-button">
+                                    <a href="" class="btn btn-card">MUA VÉ</a>
+                                </div>
+                                <div class="card-video">
+                                    <a href="https://www.youtube.com/watch?v=3BX_x7OnSmg" data-lity>
+                                        <div class="card-play text-center">
+                                            <img src="./img/icon/play-video.png" alt="play-video">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <a class="card-hover" href="#">
+                                    <div class="card-image">
+                                        <img class="card-img-top"
+                                            src="https://s3img.vcdn.vn/123phim/2019/07/spider-man-nguoi-nhen-xa-nha-spider-man-far-from-home-c13-15622963710691.jpg"
+                                            alt="Card image">
+                                        <div class="card-age">
+                                            C13
+                                        </div>
+                                        <div class="card-idmb">
+                                            <div class="card-point">8.9</div>
+                                            <div class="card-star">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.2.png" class="star-half" alt="star1.2">
+                                            </div>
+                                        </div>
+                                        <div class="card-background"></div>
+
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-info">
+                                            <h4 class="card-title">Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From
+                                                Home
+                                                (C13)
+                                            </h4>
+                                            <p class="card-text">129 phút - 8.1 IMDb</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="card-button">
+                                    <a href="" class="btn btn-card">MUA VÉ</a>
+                                </div>
+                                <div class="card-video">
+                                    <a href="https://www.youtube.com/watch?v=3BX_x7OnSmg" data-lity>
+                                        <div class="card-play text-center">
+                                            <img src="./img/icon/play-video.png" alt="play-video">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <a class="card-hover" href="#">
+                                    <div class="card-image">
+                                        <img class="card-img-top"
+                                            src="https://s3img.vcdn.vn/123phim/2019/07/spider-man-nguoi-nhen-xa-nha-spider-man-far-from-home-c13-15622963710691.jpg"
+                                            alt="Card image">
+                                        <div class="card-age">
+                                            C13
+                                        </div>
+                                        <div class="card-idmb">
+                                            <div class="card-point">8.9</div>
+                                            <div class="card-star">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.2.png" class="star-half" alt="star1.2">
+                                            </div>
+                                        </div>
+                                        <div class="card-background"></div>
+
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-info">
+                                            <h4 class="card-title">Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From
+                                                Home
+                                                (C13)
+                                            </h4>
+                                            <p class="card-text">129 phút - 8.1 IMDb</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="card-button">
+                                    <a href="" class="btn btn-card">MUA VÉ</a>
+                                </div>
+                                <div class="card-video">
+                                    <a href="https://www.youtube.com/watch?v=3BX_x7OnSmg" data-lity>
+                                        <div class="card-play text-center">
+                                            <img src="./img/icon/play-video.png" alt="play-video">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <a class="card-hover" href="#">
+                                    <div class="card-image">
+                                        <img class="card-img-top"
+                                            src="https://s3img.vcdn.vn/123phim/2019/07/spider-man-nguoi-nhen-xa-nha-spider-man-far-from-home-c13-15622963710691.jpg"
+                                            alt="Card image">
+                                        <div class="card-age">
+                                            C13
+                                        </div>
+                                        <div class="card-idmb">
+                                            <div class="card-point">8.9</div>
+                                            <div class="card-star">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.2.png" class="star-half" alt="star1.2">
+                                            </div>
+                                        </div>
+                                        <div class="card-background"></div>
+
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-info">
+                                            <h4 class="card-title">Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From
+                                                Home
+                                                (C13)
+                                            </h4>
+                                            <p class="card-text">129 phút - 8.1 IMDb</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="card-button">
+                                    <a href="" class="btn btn-card">MUA VÉ</a>
+                                </div>
+                                <div class="card-video">
+                                    <a href="https://www.youtube.com/watch?v=3BX_x7OnSmg" data-lity>
+                                        <div class="card-play text-center">
+                                            <img src="./img/icon/play-video.png" alt="play-video">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <a class="card-hover" href="#">
+                                    <div class="card-image">
+                                        <img class="card-img-top"
+                                            src="https://s3img.vcdn.vn/123phim/2019/07/spider-man-nguoi-nhen-xa-nha-spider-man-far-from-home-c13-15622963710691.jpg"
+                                            alt="Card image">
+                                        <div class="card-age">
+                                            C13
+                                        </div>
+                                        <div class="card-idmb">
+                                            <div class="card-point">8.9</div>
+                                            <div class="card-star">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.2.png" class="star-half" alt="star1.2">
+                                            </div>
+                                        </div>
+                                        <div class="card-background"></div>
+
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-info">
+                                            <h4 class="card-title">Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From
+                                                Home
+                                                (C13)
+                                            </h4>
+                                            <p class="card-text">129 phút - 8.1 IMDb</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="card-button">
+                                    <a href="" class="btn btn-card">MUA VÉ</a>
+                                </div>
+                                <div class="card-video">
+                                    <a href="https://www.youtube.com/watch?v=3BX_x7OnSmg" data-lity>
+                                        <div class="card-play text-center">
+                                            <img src="./img/icon/play-video.png" alt="play-video">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <a class="card-hover" href="#">
+                                    <div class="card-image">
+                                        <img class="card-img-top"
+                                            src="https://s3img.vcdn.vn/123phim/2019/07/spider-man-nguoi-nhen-xa-nha-spider-man-far-from-home-c13-15622963710691.jpg"
+                                            alt="Card image">
+                                        <div class="card-age">
+                                            C13
+                                        </div>
+                                        <div class="card-idmb">
+                                            <div class="card-point">8.9</div>
+                                            <div class="card-star">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.2.png" class="star-half" alt="star1.2">
+                                            </div>
+                                        </div>
+                                        <div class="card-background"></div>
+
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-info">
+                                            <h4 class="card-title">Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From
+                                                Home
+                                                (C13)
+                                            </h4>
+                                            <p class="card-text">129 phút - 8.1 IMDb</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="card-button">
+                                    <a href="" class="btn btn-card">MUA VÉ</a>
+                                </div>
+                                <div class="card-video">
+                                    <a href="https://www.youtube.com/watch?v=3BX_x7OnSmg" data-lity>
+                                        <div class="card-play text-center">
+                                            <img src="./img/icon/play-video.png" alt="play-video">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <a class="card-hover" href="#">
+                                    <div class="card-image">
+                                        <img class="card-img-top"
+                                            src="https://s3img.vcdn.vn/123phim/2019/07/spider-man-nguoi-nhen-xa-nha-spider-man-far-from-home-c13-15622963710691.jpg"
+                                            alt="Card image">
+                                        <div class="card-age">
+                                            C13
+                                        </div>
+                                        <div class="card-idmb">
+                                            <div class="card-point">8.9</div>
+                                            <div class="card-star">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.2.png" class="star-half" alt="star1.2">
+                                            </div>
+                                        </div>
+                                        <div class="card-background"></div>
+
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-info">
+                                            <h4 class="card-title">Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From
+                                                Home
+                                                (C13)
+                                            </h4>
+                                            <p class="card-text">129 phút - 8.1 IMDb</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="card-button">
+                                    <a href="" class="btn btn-card">MUA VÉ</a>
+                                </div>
+                                <div class="card-video">
+                                    <a href="https://www.youtube.com/watch?v=3BX_x7OnSmg" data-lity>
+                                        <div class="card-play text-center">
+                                            <img src="./img/icon/play-video.png" alt="play-video">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane container fade" id="menu1">
+                    <div class="row sliders slick-soon">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <a class="card-hover" href="#">
+                                    <div class="card-image">
+                                        <img class="card-img-top"
+                                            src="https://s3img.vcdn.vn/123phim/2019/06/cau-chuyen-do-choi-4-toy-story-4-15611031547160.jpg"
+                                            alt="Card image">
+                                        <div class="card-age">
+                                            C13
+                                        </div>
+                                        <div class="card-idmb">
+                                            <div class="card-point">8.9</div>
+                                            <div class="card-star">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.2.png" class="star-half" alt="star1.2">
+                                            </div>
+                                        </div>
+                                        <div class="card-background"></div>
+
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-info">
+                                            <h4 class="card-title">Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From
+                                                Home
+                                                (C13)
+                                            </h4>
+                                            <p class="card-text">129 phút - 8.1 IMDb</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="card-button">
+                                    <a href="" class="btn btn-card">MUA VÉ</a>
+                                </div>
+                                <div class="card-video">
+                                    <a href="https://www.youtube.com/watch?v=3BX_x7OnSmg" data-lity>
+                                        <div class="card-play text-center">
+                                            <img src="./img/icon/play-video.png" alt="play-video">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <a class="card-hover" href="#">
+                                    <div class="card-image">
+                                        <img class="card-img-top"
+                                            src="https://s3img.vcdn.vn/123phim/2019/06/cau-chuyen-do-choi-4-toy-story-4-15611031547160.jpg"
+                                            alt="Card image">
+                                        <div class="card-age">
+                                            C13
+                                        </div>
+                                        <div class="card-idmb">
+                                            <div class="card-point">8.9</div>
+                                            <div class="card-star">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.2.png" class="star-half" alt="star1.2">
+                                            </div>
+                                        </div>
+                                        <div class="card-background"></div>
+
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-info">
+                                            <h4 class="card-title">Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From
+                                                Home
+                                                (C13)
+                                            </h4>
+                                            <p class="card-text">129 phút - 8.1 IMDb</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="card-button">
+                                    <a href="" class="btn btn-card">MUA VÉ</a>
+                                </div>
+                                <div class="card-video">
+                                    <a href="https://www.youtube.com/watch?v=3BX_x7OnSmg" data-lity>
+                                        <div class="card-play text-center">
+                                            <img src="./img/icon/play-video.png" alt="play-video">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <a class="card-hover" href="#">
+                                    <div class="card-image">
+                                        <img class="card-img-top"
+                                            src="https://s3img.vcdn.vn/123phim/2019/07/spider-man-nguoi-nhen-xa-nha-spider-man-far-from-home-c13-15622963710691.jpg"
+                                            alt="Card image">
+                                        <div class="card-age">
+                                            C13
+                                        </div>
+                                        <div class="card-idmb">
+                                            <div class="card-point">8.9</div>
+                                            <div class="card-star">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.2.png" class="star-half" alt="star1.2">
+                                            </div>
+                                        </div>
+                                        <div class="card-background"></div>
+
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-info">
+                                            <h4 class="card-title">Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From
+                                                Home
+                                                (C13)
+                                            </h4>
+                                            <p class="card-text">129 phút - 8.1 IMDb</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="card-button">
+                                    <a href="" class="btn btn-card">MUA VÉ</a>
+                                </div>
+                                <div class="card-video">
+                                    <a href="https://www.youtube.com/watch?v=3BX_x7OnSmg" data-lity>
+                                        <div class="card-play text-center">
+                                            <img src="./img/icon/play-video.png" alt="play-video">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <a class="card-hover" href="#">
+                                    <div class="card-image">
+                                        <img class="card-img-top"
+                                            src="https://s3img.vcdn.vn/123phim/2019/07/spider-man-nguoi-nhen-xa-nha-spider-man-far-from-home-c13-15622963710691.jpg"
+                                            alt="Card image">
+                                        <div class="card-age">
+                                            C13
+                                        </div>
+                                        <div class="card-idmb">
+                                            <div class="card-point">8.9</div>
+                                            <div class="card-star">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.2.png" class="star-half" alt="star1.2">
+                                            </div>
+                                        </div>
+                                        <div class="card-background"></div>
+
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-info">
+                                            <h4 class="card-title">Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From
+                                                Home
+                                                (C13)
+                                            </h4>
+                                            <p class="card-text">129 phút - 8.1 IMDb</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="card-button">
+                                    <a href="" class="btn btn-card">MUA VÉ</a>
+                                </div>
+                                <div class="card-video">
+                                    <a href="https://www.youtube.com/watch?v=3BX_x7OnSmg" data-lity>
+                                        <div class="card-play text-center">
+                                            <img src="./img/icon/play-video.png" alt="play-video">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <a class="card-hover" href="#">
+                                    <div class="card-image">
+                                        <img class="card-img-top"
+                                            src="https://s3img.vcdn.vn/123phim/2019/07/spider-man-nguoi-nhen-xa-nha-spider-man-far-from-home-c13-15622963710691.jpg"
+                                            alt="Card image">
+                                        <div class="card-age">
+                                            C13
+                                        </div>
+                                        <div class="card-idmb">
+                                            <div class="card-point">8.9</div>
+                                            <div class="card-star">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.2.png" class="star-half" alt="star1.2">
+                                            </div>
+                                        </div>
+                                        <div class="card-background"></div>
+
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-info">
+                                            <h4 class="card-title">Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From
+                                                Home
+                                                (C13)
+                                            </h4>
+                                            <p class="card-text">129 phút - 8.1 IMDb</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="card-button">
+                                    <a href="" class="btn btn-card">MUA VÉ</a>
+                                </div>
+                                <div class="card-video">
+                                    <a href="https://www.youtube.com/watch?v=3BX_x7OnSmg" data-lity>
+                                        <div class="card-play text-center">
+                                            <img src="./img/icon/play-video.png" alt="play-video">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <a class="card-hover" href="#">
+                                    <div class="card-image">
+                                        <img class="card-img-top"
+                                            src="https://s3img.vcdn.vn/123phim/2019/07/spider-man-nguoi-nhen-xa-nha-spider-man-far-from-home-c13-15622963710691.jpg"
+                                            alt="Card image">
+                                        <div class="card-age">
+                                            C13
+                                        </div>
+                                        <div class="card-idmb">
+                                            <div class="card-point">8.9</div>
+                                            <div class="card-star">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.2.png" class="star-half" alt="star1.2">
+                                            </div>
+                                        </div>
+                                        <div class="card-background"></div>
+
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-info">
+                                            <h4 class="card-title">Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From
+                                                Home
+                                                (C13)
+                                            </h4>
+                                            <p class="card-text">129 phút - 8.1 IMDb</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="card-button">
+                                    <a href="" class="btn btn-card">MUA VÉ</a>
+                                </div>
+                                <div class="card-video">
+                                    <a href="https://www.youtube.com/watch?v=3BX_x7OnSmg" data-lity>
+                                        <div class="card-play text-center">
+                                            <img src="./img/icon/play-video.png" alt="play-video">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <a class="card-hover" href="#">
+                                    <div class="card-image">
+                                        <img class="card-img-top"
+                                            src="https://s3img.vcdn.vn/123phim/2019/07/spider-man-nguoi-nhen-xa-nha-spider-man-far-from-home-c13-15622963710691.jpg"
+                                            alt="Card image">
+                                        <div class="card-age">
+                                            C13
+                                        </div>
+                                        <div class="card-idmb">
+                                            <div class="card-point">8.9</div>
+                                            <div class="card-star">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.2.png" class="star-half" alt="star1.2">
+                                            </div>
+                                        </div>
+                                        <div class="card-background"></div>
+
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-info">
+                                            <h4 class="card-title">Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From
+                                                Home
+                                                (C13)
+                                            </h4>
+                                            <p class="card-text">129 phút - 8.1 IMDb</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="card-button">
+                                    <a href="" class="btn btn-card">MUA VÉ</a>
+                                </div>
+                                <div class="card-video">
+                                    <a href="https://www.youtube.com/watch?v=3BX_x7OnSmg" data-lity>
+                                        <div class="card-play text-center">
+                                            <img src="./img/icon/play-video.png" alt="play-video">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <a class="card-hover" href="#">
+                                    <div class="card-image">
+                                        <img class="card-img-top"
+                                            src="https://s3img.vcdn.vn/123phim/2019/07/spider-man-nguoi-nhen-xa-nha-spider-man-far-from-home-c13-15622963710691.jpg"
+                                            alt="Card image">
+                                        <div class="card-age">
+                                            C13
+                                        </div>
+                                        <div class="card-idmb">
+                                            <div class="card-point">8.9</div>
+                                            <div class="card-star">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.2.png" class="star-half" alt="star1.2">
+                                            </div>
+                                        </div>
+                                        <div class="card-background"></div>
+
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-info">
+                                            <h4 class="card-title">Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From
+                                                Home
+                                                (C13)
+                                            </h4>
+                                            <p class="card-text">129 phút - 8.1 IMDb</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="card-button">
+                                    <a href="" class="btn btn-card">MUA VÉ</a>
+                                </div>
+                                <div class="card-video">
+                                    <a href="https://www.youtube.com/watch?v=3BX_x7OnSmg" data-lity>
+                                        <div class="card-play text-center">
+                                            <img src="./img/icon/play-video.png" alt="play-video">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <a class="card-hover" href="#">
+                                    <div class="card-image">
+                                        <img class="card-img-top"
+                                            src="https://s3img.vcdn.vn/123phim/2019/07/spider-man-nguoi-nhen-xa-nha-spider-man-far-from-home-c13-15622963710691.jpg"
+                                            alt="Card image">
+                                        <div class="card-age">
+                                            C13
+                                        </div>
+                                        <div class="card-idmb">
+                                            <div class="card-point">8.9</div>
+                                            <div class="card-star">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                                                <img src="./img/icon/star1.2.png" class="star-half" alt="star1.2">
+                                            </div>
+                                        </div>
+                                        <div class="card-background"></div>
+
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-info">
+                                            <h4 class="card-title">Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From
+                                                Home
+                                                (C13)
+                                            </h4>
+                                            <p class="card-text">129 phút - 8.1 IMDb</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="card-button">
+                                    <a href="" class="btn btn-card">MUA VÉ</a>
+                                </div>
+                                <div class="card-video">
+                                    <a href="https://www.youtube.com/watch?v=3BX_x7OnSmg" data-lity>
+                                        <div class="card-play text-center">
+                                            <img src="./img/icon/play-video.png" alt="play-video">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Nav tabs -->
+
+
+    </section>
+    <!-- Films end -->
+
+    <!-- List cinema start -->
+    <!-- <section class="listCinema">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 listCinemaBg">
+                    <div class="row">
+                        <div class="col-md-1">
+                            <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                        aria-controls="home" aria-selected="true">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                        aria-controls="profile" aria-selected="false">Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                        aria-controls="contact" aria-selected="false">Contact</a>
+                                </li>
+                            </ul>
+                        </div>                     
+                        <div class="col-md-4">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane home fade show active" id="home" role="tabpanel"
+                                    aria-labelledby="home-tab">
+                                    <h2>Home</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eveniet
+                                        earum. Sed accusantium eligendi molestiae quo hic velit nobis et, tempora
+                                        placeat ratione rem blanditiis voluptates vel ipsam? Facilis, earum!</p>
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <h2>Profile</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eveniet
+                                        earum. Sed accusantium eligendi molestiae quo hic velit nobis et, tempora
+                                        placeat ratione rem blanditiis voluptates vel ipsam? Facilis, earum!</p>
+                                </div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                    <h2>Contact</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eveniet
+                                        earum. Sed accusantium eligendi molestiae quo hic velit nobis et, tempora
+                                        placeat ratione rem blanditiis voluptates vel ipsam? Facilis, earum!</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="list-movie" data-parent=".home"></div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- News -->
+    <section class="news">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="#">
+                        <p class="news__title">BÌNH LUẬN PHIM</p>
+                    </a>
+                    <div class="news__content">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="contentImg">
+                                    <a href="">
+                                        <img src="https://s3img.vcdn.vn/123phim/2019/06/annabelle-ac-quy-tro-ve-chi-beo-da-tro-lai-va-loi-hai-hon-gap-tram-lan-15616345663166.jpg"
+                                            alt="" class="img-fluid ">
+                                        <div class="background"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <a href="#" class="news__content-title">Annabelle: Ác Quỷ Trở Về - 'Chị Beo' đã trở lại
+                                    và lợi hại hơn gấp trăm lần</a>
+                                <p class="news__description">
+                                    Sau khi gieo rắc nỗi kinh hoàng vòng quanh thế giới thì Annabelle cuối cùng cũng đã
+                                    “về nhà” trong phần phim này. Nhưng lần này, chị không đi một mình mà có cả một binh
+                                    đoàn ma quỷ theo sau...
+                                </p>
+                                <div class="news__icon">
+                                    <div class="wrapIcon like">
+                                        <img class="iconImg" src="./img/icon/like.png" alt="like">
+                                        <p class="amount">0</p>
+                                    </div>
+                                    <div class="wrapIcon like">
+                                        <img class="iconImg" src="./img/icon/comment.png" alt="comment">
+                                        <p class="amount">0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__content">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="contentImg">
+                                    <a href="">
+                                        <img src="https://s3img.vcdn.vn/123phim/2019/06/ky-sinh-trung-dinh-cao-cua-dien-anh-han-quoc-15612023146523.jpg"
+                                            alt="" class="img-fluid ">
+                                        <div class="background"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <a href="#" class="news__content-title">Ký Sinh Trùng - Đỉnh cao của điện ảnh Hàn Quốc
+                                </a>
+                                <p class="news__description">
+                                    Với lối kể chuyện thông minh và kịch bản đầy nút thắt, Ký Sinh Trùng xứng đáng là
+                                    đỉnh cao của điện ảnh Hàn Quốc trong nhiều năm trở lại đây với giải Cành Cọ Vàng
+                                    danh giá tại Cannes 2019.
+                                </p>
+                                <div class="news__icon">
+                                    <div class="wrapIcon like">
+                                        <img class="iconImg" src="./img/icon/like.png" alt="like">
+                                        <p class="amount">0</p>
+                                    </div>
+                                    <div class="wrapIcon like">
+                                        <img class="iconImg" src="./img/icon/comment.png" alt="comment">
+                                        <p class="amount">0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__content">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="contentImg">
+                                    <a href="">
+                                        <img src="https://s3img.vcdn.vn/123phim/2019/06/toy-story-4-ca-bau-troi-ki-uc-tuoi-tho-bong-choc-thu-be-lai-bang-mot-bo-phim-15612011919585.jpg"
+                                            alt="" class="img-fluid ">
+                                        <div class="background"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <a href="#" class="news__content-title">Toy Story 4 - Cả bầu trời kí ức tuổi thơ bỗng
+                                    chốc thu bé lại bằng một bộ phim</a>
+                                <p class="news__description">
+                                    Gắn bó với tuổi thơ của hàng triệu thế hệ khán giả trên thế giới, Toy Story đã trở
+                                    lại với một chuyến phiêu lưu mới và những bài học ý nghĩa cũ không phai nhòa theo
+                                    năm tháng.
+                                </p>
+                                <div class="news__icon">
+                                    <div class="wrapIcon like">
+                                        <img class="iconImg" src="./img/icon/like.png" alt="like">
+                                        <p class="amount">0</p>
+                                    </div>
+                                    <div class="wrapIcon like">
+                                        <img class="iconImg" src="./img/icon/comment.png" alt="comment">
+                                        <p class="amount">0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__content">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="contentImg">
+                                    <a href="">
+                                        <img src="https://s3img.vcdn.vn/123phim/2019/07/spider-man-far-from-home-man-tai-xuat-hai-huoc-va-day-cu-lua-cua-nhen-nhi-15627535943593.jpg"
+                                            alt="" class="img-fluid ">
+                                        <div class="background"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <a href="#" class="news__content-title">Spider-Man: Far From Home - Màn tái xuất hài
+                                    hước và đầy 'cú
+                                    lừa' của Nhện 'nhí'</a>
+                                <p class="news__description">
+                                    Sau khi “bay màu” rồi được hồi sinh trong Avengers: Endgame, Nhện “nhí” của Tom
+                                    Holland đã có màn tài xuất ấn tượng với một cốt truyện đầy những “cú lừa” của
+                                    Spider-Man: Far From Home.
+                                </p>
+                                <div class="news__icon">
+                                    <div class="wrapIcon like">
+                                        <img class="iconImg" src="./img/icon/like.png" alt="like">
+                                        <p class="amount">0</p>
+                                    </div>
+                                    <div class="wrapIcon like">
+                                        <img class="iconImg" src="./img/icon/comment.png" alt="comment">
+                                        <p class="amount">0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <a href="#">
+                        <p class="news__title">BlOG ĐIỆN ẢNH</p>
+                    </a>
+                    <div class="news__content">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="contentImg">
+                                    <a href="">
+                                        <img src="https://s3img.vcdn.vn/123phim/2019/06/100-ca-chua-tuoi-ky-sinh-trung-xung-dang-la-bo-phim-hay-nhat-cua-bong-joon-ho-15610208017477.jpg"
+                                            alt="" class="img-fluid ">
+                                        <div class="background"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <a href="#" class="news__content-title">100% cà chua tươi, Ký Sinh Trùng xứng đáng là bộ
+                                    phim hay nhất của Bong Joon Ho</a>
+                                <p class="news__description">
+                                    Thắng giải Cành Cọ Vàng, tác phẩm nhận được tràng pháo tay dài tận 8 phút tại liên
+                                    hoan phim quốc tế.
+                                </p>
+                                <div class="news__icon">
+                                    <div class="wrapIcon like">
+                                        <img class="iconImg" src="./img/icon/like.png" alt="like">
+                                        <p class="amount">0</p>
+                                    </div>
+                                    <div class="wrapIcon like">
+                                        <img class="iconImg" src="./img/icon/comment.png" alt="comment">
+                                        <p class="amount">0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__content">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="contentImg">
+                                    <a href="">
+                                        <img src="https://s3img.vcdn.vn/123phim/2019/06/7830bf029e5f758f27b94df028211e6c.jpg"
+                                            alt="" class="img-fluid ">
+                                        <div class="background"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <a href="#" class="news__content-title">Người tuyết Yeti chưa bao giờ dễ thương như thế
+                                    trong Everest: Người Tuyết Bé Nhỏ</a>
+                                <p class="news__description">
+                                    Sau Răng Sún, "chiến binh" người tuyết của DreamWorks liệu có mang đến thành công
+                                    tiếp theo?
+                                </p>
+                                <div class="news__icon">
+                                    <div class="wrapIcon like">
+                                        <img class="iconImg" src="./img/icon/like.png" alt="like">
+                                        <p class="amount">0</p>
+                                    </div>
+                                    <div class="wrapIcon like">
+                                        <img class="iconImg" src="./img/icon/comment.png" alt="comment">
+                                        <p class="amount">0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__content">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="contentImg">
+                                    <a href="">
+                                        <img src="https://s3img.vcdn.vn/123phim/2019/05/godzilla-va-nhung-dieu-ban-chua-biet-p2-15590181365234.jpg"
+                                            alt="" class="img-fluid ">
+                                        <div class="background"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <a href="#" class="news__content-title">Godzilla và những điều bạn chưa biết (P2)</a>
+                                <p class="news__description">
+                                    Trước khi đại chiến diễn ra, cùng tìm hiểu mọi thông tin về Godzilla nào.
+                                </p>
+                                <div class="news__icon">
+                                    <div class="wrapIcon like">
+                                        <img class="iconImg" src="./img/icon/like.png" alt="like">
+                                        <p class="amount">0</p>
+                                    </div>
+                                    <div class="wrapIcon like">
+                                        <img class="iconImg" src="./img/icon/comment.png" alt="comment">
+                                        <p class="amount">0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__content">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="contentImg">
+                                    <a href="">
+                                        <img src="https://s3img.vcdn.vn/123phim/2019/05/a7efbb6a8e9a8260da18466de31aa362.jpg"
+                                            alt="" class="img-fluid ">
+                                        <div class="background"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <a href="#" class="news__content-title">S4 cái tên nào sẽ mang đến bất ngờ cho khán giả
+                                    'nhí' vào nửa cuối năm 2019?</a>
+                                <p class="news__description">
+                                    Này thì chó rồi mèo, và rồi gì nữa đây...
+                                </p>
+                                <div class="news__icon">
+                                    <div class="wrapIcon like">
+                                        <img class="iconImg" src="./img/icon/like.png" alt="like">
+                                        <p class="amount">0</p>
+                                    </div>
+                                    <div class="wrapIcon like">
+                                        <img class="iconImg" src="./img/icon/comment.png" alt="comment">
+                                        <p class="amount">0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Films end -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/lity.min.js"></script>
+    <script>
+
+        // Bind as an event handler
+        $(document).on('click', '[data-lightbox]', lity);
+    </script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    </script>
+    <script>
+        //dropdown menu
+        $(".dropdown-menu li a").click(function () {
+            $(this).parents(".dropdown").find('.dropdownList').html($(this).text() + ' <span class="caret pl-2"><img src="./img/icon/dropdown-icon.png" alt=""></span>');
+            $(this).parents(".dropdown").find('.dropdownList').val($(this).data('value'));
+        });
+        //menu mobile
+        function openMenu() {
+            var menu = document.getElementById("mySidenav");
+            menu.classList.add("active");
+        }
+
+        function closeNav() {
+            var menu = document.getElementById("mySidenav");
+            menu.classList.remove("active");
+        }
+
+    </script>
+    <script src="./js/slick.min.js"></script>
+    <script>
+        $(document).ready(function ($) {
+
+            var gadgetCarousel = $(".sliders");
+
+            gadgetCarousel.each(function () {
+                if ($(this).is(".slick-film")) {
+                    $(this).slick({
+                        prevArrow: '<img class="left-arrow" src="./img/icon/back-session.png">',
+                        nextArrow: '<img class="right-arrow" src="./img/icon/next-session.png">',
+                        dots: true,
+                        slidesPerRow: 4,
+                        rows: 2,
+                        responsive: [
+                            {
+                                breakpoint: 1024,
+                                settings: "unslick"
+                            },
+                            {
+                                breakpoint: 600,
+                                settings: {
+                                    slidesToShow: 2,
+                                    slidesToScroll: 2
+                                }
+                            },
+                            {
+                                breakpoint: 480,
+                                settings: {
+                                    slidesToShow: 1,
+                                    slidesToScroll: 1
+                                }
+                            }
+                        ]
+                    });
+                }
+                else if ($(this).is(".slick-soon")) {
+                    $(this).slick({
+                        prevArrow: '<img class="left-arrow" src="./img/icon/back-session.png">',
+                        nextArrow: '<img class="right-arrow" src="./img/icon/next-session.png">',
+                        dots: true,
+                        slidesPerRow: 4,
+                        rows: 2,
+                    });
+                }
+                else {
+                    $(this).slick();
+                }
+            })
+
+
+
+
+        }); // end of os-carousel.js
+
+
+    </script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
