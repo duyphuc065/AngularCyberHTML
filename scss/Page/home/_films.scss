@@ -31,9 +31,10 @@
         position: relative;
        
         .tab-pane {
-            max-width: 950px;
+            max-width: 1000px;
 
             .card {
+                padding:0 15px;
                 border: none;
                 text-decoration: none;
                 position: relative;
@@ -156,12 +157,12 @@
                 }
                 .card-button {
                     opacity: 0;
-                        transition: all 0.2s;
+                    transition: all 0.2s;
                     .btn-card {
                         position: absolute;
                         bottom:10%;
-                        left:0;
-                        width: 100%;
+                        left:6%;
+                        width: 88%;
                         padding: 10px;
                         color: $color-white-0;
                         font-size: $fs-4;

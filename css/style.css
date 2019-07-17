@@ -11,18 +11,20 @@ body {
   color: #000;
   min-height: 1000px; }
 
-@font-face {
-  font-family: "SF Display";
-  font-weight: 400;
-  src: url("./font/SF-UI-Display-Regular.otf"); }
-@font-face {
-  font-family: "SF Display";
-  font-weight: 500;
-  src: url("./font/SF-UI-Display-Medium.otf"); }
-@font-face {
-  font-family: "SF Text";
-  font-weight: 400;
-  src: url("./font/SF-UI-Text-Regular.otf"); }
+.scroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  background-color: #F5F5F5; }
+
+.scroll::-webkit-scrollbar {
+  width: 5px;
+  background-color: #F5F5F5; }
+
+.scroll::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555; }
+
 .line {
   height: 30px;
   border-right: 1px solid #9b9b9b;
@@ -48,6 +50,11 @@ a {
   text-decoration: none; }
   a:hover {
     text-decoration: none; }
+
+ul {
+  list-style: none; }
+  ul li {
+    list-style: none; }
 
 .banner {
   margin-top: 60px;
@@ -150,8 +157,9 @@ a {
   .films .tab-content {
     position: relative; }
     .films .tab-content .tab-pane {
-      max-width: 950px; }
+      max-width: 1000px; }
       .films .tab-content .tab-pane .card {
+        padding: 0 15px;
         border: none;
         text-decoration: none;
         position: relative; }
@@ -235,8 +243,8 @@ a {
           .films .tab-content .tab-pane .card .card-button .btn-card {
             position: absolute;
             bottom: 10%;
-            left: 0;
-            width: 100%;
+            left: 6%;
+            width: 88%;
             padding: 10px;
             color: #fff;
             font-size: 18px;
@@ -262,6 +270,120 @@ a {
     .films .tab-content .right-arrow {
       right: -70px; }
 
+.listCinema .listCinemaBg {
+  padding: 120px 0;
+  background: url(../../../img/icon/back-news.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%; }
+  .listCinema .listCinemaBg .listCinema__nav {
+    width: 90px;
+    border: 1px solid #ebebec; }
+    .listCinema .listCinemaBg .listCinema__nav img {
+      width: 50px;
+      height: 50px; }
+    .listCinema .listCinemaBg .listCinema__nav .nav-link {
+      padding: 20px;
+      position: relative; }
+      .listCinema .listCinemaBg .listCinema__nav .nav-link:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: calc(100% - 40px);
+        transform: translateX(-50%);
+        border-bottom: 1px solid #fff;
+        border-color: rgba(238, 238, 238, 0.88); }
+  .listCinema .listCinemaBg #listCinema__content {
+    margin-left: -5px;
+    height: 362px;
+    border-top: 1px solid #ebebec;
+    border-bottom: 1px solid #ebebec;
+    overflow-y: auto;
+    overflow-x: hidden; }
+    .listCinema .listCinemaBg #listCinema__content .tab-pane .listCinema__item {
+      padding: 20px 0 20px 20px;
+      position: relative;
+      display: flex; }
+      .listCinema .listCinemaBg #listCinema__content .tab-pane .listCinema__item img {
+        width: 50px;
+        height: 50px; }
+      .listCinema .listCinemaBg #listCinema__content .tab-pane .listCinema__item .wrap-info {
+        padding-left: 10px; }
+        .listCinema .listCinemaBg #listCinema__content .tab-pane .listCinema__item .wrap-info .nameCinema {
+          color: #000;
+          font-size: 14px;
+          font-weight: 400; }
+        .listCinema .listCinemaBg #listCinema__content .tab-pane .listCinema__item .wrap-info .addressCinema {
+          color: #333;
+          font-size: 12px;
+          font-weight: 400;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; }
+      .listCinema .listCinemaBg #listCinema__content .tab-pane .listCinema__item:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: calc(100% - 40px);
+        transform: translateX(-50%);
+        border-bottom: 1px solid #fff;
+        border-color: rgba(238, 238, 238, 0.88); }
+  .listCinema .listCinemaBg #listCinema__movie {
+    border: 1px solid #ebebec;
+    height: 362px;
+    padding: 15px;
+    overflow-y: auto;
+    overflow-x: hidden; }
+    .listCinema .listCinemaBg #listCinema__movie .wrapMovie {
+      position: relative;
+      padding: 20px 0; }
+      .listCinema .listCinemaBg #listCinema__movie .wrapMovie .movieInfo {
+        display: flex; }
+        .listCinema .listCinemaBg #listCinema__movie .wrapMovie .movieInfo img {
+          width: 50px;
+          height: 50px; }
+        .listCinema .listCinemaBg #listCinema__movie .wrapMovie .movieInfo .wrapInfo {
+          padding-top: 5px;
+          padding-left: 10px;
+          display: block; }
+          .listCinema .listCinemaBg #listCinema__movie .wrapMovie .movieInfo .wrapInfo .nameMovie {
+            color: #000;
+            font-size: 14px;
+            font-weight: 600;
+            display: block; }
+          .listCinema .listCinemaBg #listCinema__movie .wrapMovie .movieInfo .wrapInfo .timeMovie {
+            color: #333;
+            font-size: 12px;
+            font-weight: 400;
+            display: block; }
+      .listCinema .listCinemaBg #listCinema__movie .wrapMovie .listTime {
+        padding-top: 15px;
+        display: flex; }
+        .listCinema .listCinemaBg #listCinema__movie .wrapMovie .listTime img {
+          margin-right: 35px;
+          margin-top: 7px;
+          width: 30px;
+          height: 26px; }
+        .listCinema .listCinemaBg #listCinema__movie .wrapMovie .listTime .sessons .time {
+          font-size: 22px;
+          font-weight: 500;
+          color: #417500;
+          margin: 0 5px 5px 0;
+          transition: all 0.2s; }
+          .listCinema .listCinemaBg #listCinema__movie .wrapMovie .listTime .sessons .time:hover {
+            color: #fb4226; }
+      .listCinema .listCinemaBg #listCinema__movie .wrapMovie:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: calc(100% - 40px);
+        transform: translateX(-50%);
+        border-bottom: 1px solid #fff;
+        border-color: rgba(238, 238, 238, 0.88); }
+
 .news .news__title {
   color: #000;
   font-size: 18px;
@@ -275,7 +397,7 @@ a {
     width: 50px;
     height: 2px;
     margin-top: 8px;
-    content: '';
+    content: "";
     background-color: #fb4226; }
 .news .news__content {
   margin: 20px 0; }
@@ -318,13 +440,90 @@ a {
     margin-top: 2px;
     height: auto;
     width: 18px;
-    transition: all .2s; }
+    transition: all 0.2s; }
     .news .news__icon .wrapIcon .iconImg:hover {
       transform: scale(1.1); }
   .news .news__icon .wrapIcon .amount {
     display: table-cell;
     vertical-align: middle;
     color: #9b9b9b; }
+.news .news__promotion .card {
+  width: 300px;
+  transition: transform 0.4s;
+  position: relative;
+  transform: scale(0.7) translate(320px); }
+  .news .news__promotion .card .card-img-overlay {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    opacity: 0;
+    transition: all 0.2s; }
+    .news .news__promotion .card .card-img-overlay .card-title {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .news .news__promotion .card .card-img-overlay:hover {
+      opacity: 1; }
+.news .news__promotion .slick-arrow {
+  position: absolute;
+  top: 45%;
+  width: 50px;
+  cursor: pointer;
+  opacity: 0.5; }
+.news .news__promotion .left-arrow {
+  left: -10px; }
+.news .news__promotion .right-arrow {
+  right: -10px; }
+.news .news__promotion .slick-slide:after {
+  content: "";
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s; }
+.news .news__promotion .card.slick-slide.slick-center + .slick-slide {
+  transform: scale(0.8) translate(-125px);
+  z-index: 10; }
+.news .news__promotion .card.slick-slide.slick-center + .slick-slide + .card.slick-slide {
+  transform: scale(0.7) translate(-320px);
+  z-index: 5; }
+.news .news__promotion .card.slick-slide.slick-active {
+  transform: scale(0.8) translate(125px); }
+.news .news__promotion .card.slick-slide.slick-center {
+  /* margin: 0 -10%; */
+  transform: scale(1);
+  z-index: 30; }
+  .news .news__promotion .card.slick-slide.slick-center:after {
+    z-index: -2; }
+.news .news__promotion .slick-center:after {
+  opacity: 0; }
+
+.app {
+  padding: 120px 0 80px 0;
+  background: url("../../../img/icon/backapp.jpg");
+  background-size: contain;
+  color: #fff;
+  margin-top: 100px; }
+  .app .text-title {
+    font-size: 32px; }
+  .app .text-content {
+    font-size: 16px; }
+  .app .text-download {
+    font-size: 14px; }
+  .app .btn-download {
+    background-color: #fb4226;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px; }
 
 .header .menu-des {
   padding: 5px 10px;
@@ -437,5 +636,41 @@ a {
 @media (max-width: 768px) and (min-width: 736px) {
   .header .category {
     display: none; } }
+
+.footer {
+  background-color: #333;
+  padding: 40px 15px 20px 15px; }
+  .footer .footer__title {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1;
+    position: relative;
+    text-transform: uppercase;
+    margin: 0 0 25px 0;
+    padding-left: 16px; }
+    .footer .footer__title:before {
+      background-color: #fb4226;
+      content: "";
+      height: 22px;
+      left: 0;
+      position: absolute;
+      top: -2px;
+      width: 4px; }
+    .footer .footer__title:last-child {
+      margin-bottom: 10px; }
+  .footer .footer__li {
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    padding-bottom: 7px; }
+    .footer .footer__li .footer__content {
+      color: #fff;
+      transition: all 0.2s; }
+      .footer .footer__li .footer__content:hover {
+        color: #fb4226; }
+  .footer .footer__icon {
+    height: 30px;
+    width: auto;
+    margin: 5px; }
 
 /*# sourceMappingURL=style.css.map */
