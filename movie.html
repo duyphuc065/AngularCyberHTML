@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/lity.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <!-- menu desktop -->
+        <nav class="fixed-top menu-des d-none d-lg-block">
+            <div class="container-fluid">
+                <div class="row">
+                    <a href="" class="col logo"><img src="./img/icon/web-logo.png" alt="logo"></a>
+                    <ul class="col m-0 row justifi-content-beetwen category">
+                        <li><a href="">Lịch chiếu</a></li>
+                        <li><a href="">Cụm rạp</a></li>
+                        <li><a href="">Tin tức</a></li>
+                        <li><a href="">Ứng dụng</a></li>
+                    </ul>
+                    <div class="col row justify-content-end right m-0">
+                        <div class="login">
+                            <a href=""><img src="./img/avatar.png" alt="avatar" class="imgLogin">
+                                Đăng nhập
+                            </a>
+                        </div>
+                        <div class="line "></div>
+                        <div class="dropdown">
+                            <img src="./img/icon/location-header.png" class="pr-3" alt="location-header">
+                            <div class="header__location dropdownList dropdown-toggle" id="dropdownMenu1"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Hồ Chí Minh
+                                <span class="caret pl-2"><img src="./img/icon/dropdown-icon.png" alt=""></span>
+                            </div>
+                            <ul class="dropdown-menu scroll" aria-labelledby="dropdownMenu1">
+                                <li><a class="dropdown-item" href="#" data-value="Hồ Chí Minh">Hồ Chí Minh</a></li>
+                                <li><a class="dropdown-item" href="#" data-value="Hà Nội">Hà Nội </a></li>
+                                <li><a class="dropdown-item" href="#" data-value="Đà Nẵng">Đà Nẵng</a></li>
+                                <li><a class="dropdown-item" href="#" data-value="Hải Phòng">Hải Phòng</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- menu mobile -->
+        <nav class="fixed-top menu-mob d-block d-lg-none">
+            <div class="container-fluid">
+                <div class="row">
+                    <a href="" class="col logo">
+                        <img src="./img/icon/web-logo.png" alt="web-logo">
+                    </a>
+                    <div class="col row justify-content-end right ">
+                        <div class="menu-options">
+                            <a href="javascript:void(0)" id="open-menu" onclick="openMenu()">
+                                <img src="./img/icon/menu-options.png" alt="menu-options">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="mySidenav">
+            <div class="wrap-menu">
+                <ul class="login-mob row">
+                    <li class="col-auto wrap-login">
+                        <a href=""><img src="./img/avatar.png" alt="avatar" class="imgLoginMo">
+                            Đăng nhập
+                        </a>
+                    </li>
+                    <li class="col menu-close">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                            <img src="./img/icon/next-session.png" class="imgClose" alt="imgLogin">
+                        </a>
+                    </li>
+                    <li class="col-12 category-mob ">
+                        <a href="">Lịch chiếu</a>
+                        <a href="">Cụm rạp</a>
+                        <a href="">Tin tức</a>
+                        <a href="">Ứng dụng</a>
+                        <a href="">Hồ Chí Minh</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <!-- header end -->
+
+    <!-- movie -->
+    <section class="movie">
+        <!-- destop -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 p-0 movie__image">
+                    <img src="https://s3img.vcdn.vn/123phim/2019/07/vua-su-tu-the-lion-king-15633583739500.jpg"
+                        class="img-fluid" alt="">
+                    <div class="movie__button">
+                        <a href="https://www.youtube.com/watch?v=DYYtuKyMtY8" data-lity>
+                            <div class="movie__video text-center">
+                                <img src="./img/icon/play-video.png" alt="play-video">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="movie__bg"></div>
+                    <div class="card-idmb">
+                        <div class="card-point">8.9</div>
+                        <div class="card-star">
+                            <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                            <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                            <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                            <img src="./img/icon/star1.png" class="star-all" alt="star1">
+                            <img src="./img/icon/star1.2.png" class="star-half" alt="star1.2">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 movie__text">
+                    <p>19.07.2019</p>
+                    <p class="movie__title">Vua Sư Tử - The Lion King</p>
+                    <p>118 phút - 6.4 IMDb - 2D/Digital/3D/IMAX/4DX</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 movie__tab">
+                        <ul class="nav movie__nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#showing">Lịch chiếu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#info">Thông tin</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#comment">Đánh giá</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content movie__content">
+                            <div id="showing" class="tab-pane fade in active show">
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                                    aria-expanded="true" aria-controls="collapseOne" class="tab-image">
+                                                    <img src="https://s3img.vcdn.vn/123phim/2018/09/f32670fd0eb083c9c4c804f0f3a252ed.png"
+                                                        class="img-fluid" alt="">
+                                                    <p>BHD Star Cineplex</p>
+                                                </a>
+                                            </h4>
+
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in show" role="tabpanel"
+                                            aria-labelledby="headingOne">
+                                            <div class="panel-body tab-body">
+                                                <div class="wrapMovie">
+                                                    <div class="movieInfo">
+                                                        <img src="https://s3img.vcdn.vn/123phim/2018/09/bhd-star-vincom-3-2-15379527367766.jpg"
+                                                            alt="">
+                                                        <div class="wrapInfo">
+                                                            <span class="nameMovie">BHD Star Cineplex - 3/2
+                                                            </span>
+                                                            <span class="timeMovie">L5-Vincom 3/2, 3C Đường 3/2, Q.10
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="listTime">
+                                                        <img src="./img/icon/type/2_0.png" alt="">
+                                                        <div class="sessons">
+                                                            <a href="" class="time">10:50</a>
+                                                            <a href="" class="time">11:50</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wrapMovie">
+                                                    <div class="movieInfo">
+                                                        <img src="https://s3img.vcdn.vn/123phim/2018/09/bhd-star-bitexco-15379552241200.jpg"
+                                                            alt="">
+                                                        <div class="wrapInfo">
+                                                            <span class="nameMovie">BHD Star Cineplex - Bitexco
+                                                            </span>
+                                                            <span class="timeMovie">L3-Bitexco Icon 68, 2 Hải Triều, Q.1
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="listTime">
+                                                        <img src="./img/icon/type/2_0.png" alt="">
+                                                        <div class="sessons">
+                                                            <a href="" class="time">10:50</a>
+                                                            <a href="" class="time">11:50</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingTwo">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed tab-image" data-toggle="collapse"
+                                                    data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                                                    aria-controls="collapseTwo">
+                                                    <img src="https://s3img.vcdn.vn/123phim/2018/09/e520781386bd5436e94d6e15e193a005.png"
+                                                        class="img-fluid" alt="">
+                                                    <p>Galaxy Cinema</p>
+                                                </a>
+                                            </h4>
+
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                                            aria-labelledby="headingTwo">
+                                            <div class="panel-body tab-body">Anim pariatur cliche reprehenderit, enim
+                                                eiusmod
+                                                high life accusamus terry richardson ad squid.</div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingThree">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed tab-image" data-toggle="collapse"
+                                                    data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+                                                    aria-controls="collapseThree">
+                                                    <img src="https://s3img.vcdn.vn/123phim/2018/09/1721cfa98768f300c03792e25ceb0191.png"
+                                                        class="img-fluid" alt="">
+                                                    <p>CineStar</p>
+                                                </a>
+                                            </h4>
+
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                                            aria-labelledby="headingThree">
+                                            <div class="panel-body tab-body">Anim pariatur cliche reprehenderit, enim
+                                                eiusmod
+                                                high life accusamus terry richardson ad squid. </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="info" class="tab-pane fade">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row text">
+                                            <p>Ngày phát hành</p>
+                                            <span>19.07.2019</span>
+                                        </div>
+                                        <div class="row text">
+                                            <p>Đạo diễn</p>
+                                            <span>Jon Favreau</span>
+                                        </div>
+                                        <div class="row text">
+                                            <p>Diễn viên</p>
+                                            <span>Donald Glover, Beyoncé Knowles, Chiwetel Ejiofor, Seth RogenDonald
+                                                Glover, Beyoncé Knowles, Chiwetel Ejiofor, Seth Rogen</span>
+                                        </div>
+                                        <div class="row text">
+                                            <p>Thể Loại</p>
+                                            <span>hoạt hình, phiêu lưu</span>
+                                        </div>
+                                        <div class="row text">
+                                            <p>Định dạng</p>
+                                            <span>2D/Digital/3D/IMAX/4DX</span>
+                                        </div>
+                                        <div class="row text">
+                                            <p>Quốc Gia SX</p>
+                                            <span>Mỹ</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row text">
+                                            <p>Nội dung</p>
+                                            <span>Phiên bản live-action của Vua Sư Tử huyền thoại.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="comment" class="tab-pane fade ">
+                                <div class="col-md-12 wrapComment">
+                                    <input type="text" data-toggle="modal" data-target="#myModal" class="inputComment"
+                                        placeholder="Bạn nghĩ gì về phim này ?" />
+                                    <span class="imgComment">
+                                        <img src="./img/avatar.png" class="img-fluid" alt="">
+                                    </span>
+                                    <span class="starComment">
+                                        <img src="./img/icon/listStar.png" class="img-fluid" alt="">
+                                    </span>
+                                </div>
+                                <div class="col-md-12 mt-2">
+                                    <div class="wrapReview">
+                                        <div class="reviewInfo">
+                                            <div class="reviewAvatar">
+                                                <img src="./img/avatar.png" class="img-fluid" alt="">
+                                                <div class="reviewTime">
+                                                    <p class="reviewName">Ahihi</p>
+                                                    <p>11:00</p>
+                                                </div>
+                                            </div>
+                                            <div class="reviewRating">
+                                                <p>10</p>
+                                                <div class="reviewStar">
+                                                    <img src="./img/icon/star1.png" class="img-fluid star" alt="">
+                                                    <img src="./img/icon/star1.png" class="img-fluid star" alt="">
+                                                    <img src="./img/icon/star1.png" class="img-fluid star" alt="">
+                                                    <img src="./img/icon/star1.png" class="img-fluid star" alt="">
+                                                    <img src="./img/icon/star1.2.png" class="img-fluid starHalf" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="reviewContent">
+                                            <p>Phim hay</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrapReview">
+                                        <div class="reviewInfo">
+                                            <div class="reviewAvatar">
+                                                <img src="./img/avatar.png" class="img-fluid" alt="">
+                                                <div class="reviewTime">
+                                                    <p class="reviewName">Ahihi</p>
+                                                    <p>11:00</p>
+                                                </div>
+                                            </div>
+                                            <div class="reviewRating">
+                                                <p>10</p>
+                                                <div class="reviewStar">
+                                                    <img src="./img/icon/star1.png" class="img-fluid star" alt="">
+                                                    <img src="./img/icon/star1.png" class="img-fluid star" alt="">
+                                                    <img src="./img/icon/star1.png" class="img-fluid star" alt="">
+                                                    <img src="./img/icon/star1.png" class="img-fluid star" alt="">
+                                                    <img src="./img/icon/star1.2.png" class="img-fluid starHalf" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="reviewContent">
+                                            <p>Phim hay</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <div id="rating">
+                            <input type="radio" id="star5" name="rating" value="5" />
+                            <label class="full" for="star5" title="Awesome - 5 stars"></label>
+
+                            <input type="radio" id="star4half" name="rating" value="4 and a half" />
+                            <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+
+                            <input type="radio" id="star4" name="rating" value="4" />
+                            <label class="full" for="star4" title="Pretty good - 4 stars"></label>
+
+                            <input type="radio" id="star3half" name="rating" value="3 and a half" />
+                            <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+
+                            <input type="radio" id="star3" name="rating" value="3" />
+                            <label class="full" for="star3" title="Meh - 3 stars"></label>
+
+                            <input type="radio" id="star2half" name="rating" value="2 and a half" />
+                            <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+
+                            <input type="radio" id="star2" name="rating" value="2" />
+                            <label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+
+                            <input type="radio" id="star1half" name="rating" value="1 and a half" />
+                            <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+
+                            <input type="radio" id="star1" name="rating" value="1" />
+                            <label class="full" for="star1" title="Sucks big time - 1 star"></label>
+
+                            <input type="radio" id="starhalf" name="rating" value="half" />
+                            <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                       <div class="container">
+                           <div class="row">
+                               <div class="col-md-12">
+                                   <textarea autofocus class="commentText" rows="2" placeholder="Nói cho mọi người biết bạn nghĩ gì về phim này..."></textarea>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success">Gửi</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul>
+                        <li class="footer__title">GIỚI THIỆU</li>
+                        <ul>
+                            <li class="footer__li">
+                                <a href="" class="footer__content">
+                                    <i class="fa fa-asterisk" aria-hidden="true"></i> Về chúng tôi
+                                </a>
+                            </li>
+                            <li class="footer__li">
+                                <a href="" class="footer__content">
+                                    <i class="fa fa-asterisk" aria-hidden="true"></i> Thoả thuận sử dụng
+                                </a>
+                            </li>
+                            <li class="footer__li">
+                                <a href="" class="footer__content">
+                                    <i class="fa fa-asterisk" aria-hidden="true"></i> Quy chế hoạt động
+                                </a>
+                            </li>
+                            <li class="footer__li">
+                                <a href="" class="footer__content">
+                                    <i class="fa fa-asterisk" aria-hidden="true"></i> Chính sách bảo mật
+                                </a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li class="footer__title">Góc điện ảnh</li>
+                        <ul>
+                            <li class="footer__li">
+                                <a href="" class="footer__content">
+                                    <i class="fa fa-asterisk" aria-hidden="true"></i> Thể loại phim
+                                </a>
+                            </li>
+                            <li class="footer__li">
+                                <a href="" class="footer__content">
+                                    <i class="fa fa-asterisk" aria-hidden="true"></i> Bình luận phim
+                                </a>
+                            </li>
+                            <li class="footer__li">
+                                <a href="" class="footer__content">
+                                    <i class="fa fa-asterisk" aria-hidden="true"></i> Blog điện ảnh
+                                </a>
+                            </li>
+                            <li class="footer__li">
+                                <a href="" class="footer__content">
+                                    <i class="fa fa-asterisk" aria-hidden="true"></i> Phim hay tháng
+                                </a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li class="footer__title">Hỗ trợ</li>
+                        <ul>
+                            <li class="footer__li">
+                                <a href="" class="footer__content">
+                                    <i class="fa fa-asterisk" aria-hidden="true"></i> Góp ý
+                                </a>
+                            </li>
+                            <li class="footer__li">
+                                <a href="" class="footer__content">
+                                    <i class="fa fa-asterisk" aria-hidden="true"></i> Sale & Services
+                                </a>
+                            </li>
+                            <li class="footer__li">
+                                <a href="" class="footer__content">
+                                    <i class="fa fa-asterisk" aria-hidden="true"></i> Rạp / giá vé
+                                </a>
+                            </li>
+                            <li class="footer__li">
+                                <a href="" class="footer__content">
+                                    <i class="fa fa-asterisk" aria-hidden="true"></i> Tuyển dụng
+                                </a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li class="footer__title">Social</li>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="./img/icon/facebook-logo.png" class="footer__icon" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="./img/icon/zalo-logo.png" class="footer__icon" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/lity.min.js"></script>
+    <script>
+
+        // Bind as an event handler
+        $(document).on('click', '[data-lightbox]', lity);
+    </script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    </script>
+    <script>
+        //dropdown menu
+        $(".dropdown-menu li a").click(function () {
+            $(this).parents(".dropdown").find('.dropdownList').html($(this).text() + ' <span class="caret pl-2"><img src="./img/icon/dropdown-icon.png" alt=""></span>');
+            $(this).parents(".dropdown").find('.dropdownList').val($(this).data('value'));
+        });
+        //menu mobile
+        function openMenu() {
+            var menu = document.getElementById("mySidenav");
+            menu.classList.add("active");
+        };
+
+        function closeNav() {
+            var menu = document.getElementById("mySidenav");
+            menu.classList.remove("active");
+        };
+      
+
+    </script>
+    <script src="./js/slick.min.js"></script>
+    <script>
+        $(document).ready(function ($) {
+
+            var gadgetCarousel = $(".sliders");
+
+            gadgetCarousel.each(function () {
+                if ($(this).is(".slick-film")) {
+                    $(this).slick({
+                        prevArrow: '<img class="left-arrow" src="./img/icon/back-session.png">',
+                        nextArrow: '<img class="right-arrow" src="./img/icon/next-session.png">',
+                        infinite: true,
+                        speed: 300,
+                        slidesPerRow: 4,
+                        rows: 2,
+                        responsive: [
+                            {
+                                breakpoint: 1024,
+                                settings: {
+                                    slidesPerRow: 3,
+                                    rows: 2,
+                                    infinite: true,
+                                }
+                            },
+                            {
+                                breakpoint: 600,
+                                settings: {
+                                    slidesPerRow: 2,
+                                    rows: 2,
+                                    infinite: true,
+                                    arrows: false,
+                                    dot: false,
+                                }
+                            },
+
+                        ]
+                    });
+                }
+                else if ($(this).is(".slick-soon")) {
+                    $(this).slick({
+                        prevArrow: '<img class="left-arrow" src="./img/icon/back-session.png">',
+                        nextArrow: '<img class="right-arrow" src="./img/icon/next-session.png">',
+                        infinite: true,
+                        speed: 300,
+                        slidesPerRow: 4,
+                        rows: 2,
+                        responsive: [
+                            {
+                                breakpoint: 1024,
+                                settings: {
+                                    slidesPerRow: 3,
+                                    rows: 2,
+                                    infinite: true,
+                                }
+                            },
+                            {
+                                breakpoint: 600,
+                                settings: {
+                                    slidesPerRow: 2,
+                                    rows: 2,
+                                    infinite: true,
+                                    arrows: false,
+                                    dot: false,
+                                }
+                            },
+
+                        ]
+                    });
+                }
+                else if ($(this).is(".slick-news")) {
+                    $(this).slick({
+                        prevArrow: '<img class="left-arrow" src="./img/icon/back-session.png">',
+                        nextArrow: '<img class="right-arrow" src="./img/icon/next-session.png">',
+                        centerMode: true,
+                        variableWidth: true,
+                        focusOnSelect: true,
+                        slidesToShow: 3,
+                        responsive: [
+                            {
+                                breakpoint: 600,
+                                arrows: false,
+                            },
+                        ]
+                    });
+                }
+                else {
+                    $(this).slick();
+                }
+            })
+        });
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+            $('.slick-soon').slick('setPosition');
+        });
+
+    </script>
+    <script src="./js/jquery.adaptive-backgrounds.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.adaptiveBackground.run();
+        });
+    </script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
