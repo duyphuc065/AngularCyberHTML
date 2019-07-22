@@ -474,9 +474,11 @@ ul {
   cursor: pointer;
   opacity: 0.5; }
 .news .news__promotion .left-arrow {
-  left: -10px; }
+  left: -10px;
+  z-index: -2; }
 .news .news__promotion .right-arrow {
-  right: -10px; }
+  right: -10px;
+  z-index: -2; }
 .news .news__promotion .slick-slide:after {
   content: "";
   position: absolute;
@@ -507,7 +509,7 @@ ul {
 
 .app {
   padding: 120px 0 80px 0;
-  background: url("../../../img/icon/backapp.jpg");
+  background: url("../img/icon/backapp.jpg");
   background-size: contain;
   color: #fff;
   margin-top: 100px; }

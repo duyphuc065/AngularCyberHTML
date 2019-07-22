@@ -121,9 +121,11 @@
     }
     .left-arrow {
       left: -10px;
+      z-index: -2;
     }
     .right-arrow {
       right: -10px;
+      z-index:-2;
     }
 
     .slick-slide:after {
